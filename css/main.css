@@ -263,3 +263,42 @@ textarea {
   }
 }
 
+body {
+  background: #EEF3F7;
+  font-family: 'Open Sans', serif;
+}
+
+.hero {
+  max-width: 750px;
+  margin: auto;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+.hero ul {
+  padding: 0;
+}
+
+.hero ul li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.hero ul li a {
+  color: #006FEE;
+  font-weight: 600;
+}
+
+.hero ul li a:hover {
+  text-decoration: none;
+}
