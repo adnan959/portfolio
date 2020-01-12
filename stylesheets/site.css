@@ -7,25 +7,25 @@ h6 {
   margin: 0; }
 
 h1 {
-  font-size: 36px;
-  font-weight: 600; }
+  font-size: 34px;
+  font-weight: 700; }
   @media (min-width: 64em) {
     h1 {
-      font-size: 42px; } }
+      font-size: 38px; } }
 
 h2 {
-  font-size: 32px;
-  font-weight: 600; }
+  font-size: 30px;
+  font-weight: 700; }
   @media (min-width: 64em) {
     h2 {
-      font-size: 36px; } }
+      font-size: 34px; } }
 
 h3 {
-  font-size: 24px;
-  font-weight: 600; }
+  font-size: 22px;
+  font-weight: 700; }
 
 h4 {
-  font-size: 24px; }
+  font-size: 20px; }
 
 h5 {
   font-size: 18px; }
@@ -36,7 +36,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Proxima Nova", serif;
+  font-family: "Open Sans", serif;
   margin: 0; }
 
 .container {
@@ -58,7 +58,7 @@ header {
     line-height: 8px; }
     header .logo a {
       text-decoration: none;
-      font-size: 20px;
+      font-size: 18px;
       color: #000; }
   header ul {
     float: right;
@@ -66,7 +66,7 @@ header {
     header ul li {
       display: inline-block;
       margin-left: 32px;
-      font-size: 16px; }
+      font-size: 14px; }
     header ul a {
       color: #495055;
       font-weight: 600;
@@ -100,26 +100,34 @@ footer {
   position: relative;
   background: #021E40;
   width: 100%;
-  height: 70vh;
-  min-height: 650px; }
+  height: 100vh; }
+  @media (min-width: 64em) {
+    .hero {
+      height: 70vh;
+      min-height: 650px; } }
   .hero .container {
     left: 0;
     right: 0;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    top: 30%;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%); }
+    @media (min-width: 64em) {
+      .hero .container {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); } }
   .hero h1 {
     margin: 0 0 20px 0; }
   .hero p {
     opacity: 0.8;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 36px;
     margin: 0 0 42px 0;
-    max-width: 700px;
+    max-width: 550px;
     display: block; }
   .hero small {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 600;
     max-width: 350px;
@@ -152,12 +160,12 @@ footer {
     text-decoration: none; }
     .case-studies article a h3 {
       color: #232729;
-      font-weight: 600; }
+      font-weight: 700; }
     .case-studies article a .details .team {
       color: #232729;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 24px;
-      margin: 16px 0 8px 0;
+      margin: 20px 0 4px 0;
       font-weight: 700; }
       .case-studies article a .details .team:before {
         background: #C0C4C9;
@@ -196,8 +204,7 @@ footer {
       list-style: circle;
       margin-bottom: 18px; }
   .post h4 {
-    margin-top: 60px;
-    font-weight: 600; }
+    margin-top: 60px; }
     @media (min-width: 64em) {
       .post h4 {
         margin-top: 90px; } }
