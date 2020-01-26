@@ -8,7 +8,10 @@ h6 {
   font-weight: 600; }
 
 h1 {
-  font-size: 42px; }
+  font-size: 36px; }
+  @media (min-width: 75em) {
+    h1 {
+      font-size: 42px; } }
 
 h2 {
   font-size: 24px; }
@@ -37,31 +40,108 @@ body {
   .block.light {
     background: #EEF3F7; }
 
-header {
+/* header */
+.header {
+  border-bottom: 1px solid #EBECF0;
   padding: 40px 0;
-  border-bottom: 1px solid #EBECF0; }
-  header:after {
+  display: block;
+  width: 100%;
+  z-index: 3; }
+  .header:after {
     content: "";
     display: table;
     clear: both; }
-  header .logo {
+  .header .logo {
     float: left;
     line-height: 8px; }
-    header .logo a {
+    .header .logo a {
+      color: #000;
       text-decoration: none;
-      font-size: 18px;
-      color: #000; }
-  header ul {
-    float: right;
-    margin: 0; }
-    header ul li {
-      display: inline-block;
-      margin-left: 32px;
-      font-size: 14px; }
-    header ul a {
-      color: #42484D;
+      font-size: 20px;
+      font-weight: 600; }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    top: 16px; }
+    .header ul li a {
+      color: #232729;
+      font-size: 16px;
       font-weight: 600;
-      text-decoration: none; }
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0; }
+  .header .menu {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    clear: both;
+    max-height: 0; }
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 8px 0;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .header .menu-icon .navicon {
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      background: #232729;
+      display: block;
+      height: 2px;
+      position: relative;
+      width: 18px; }
+      .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+        background: #232729;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        width: 100%; }
+      .header .menu-icon .navicon:before {
+        top: 5px; }
+      .header .menu-icon .navicon:after {
+        top: -5px; }
+  .header .menu-btn {
+    display: none; }
+    .header .menu-btn:checked ~ .menu {
+      max-height: 240px; }
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent; }
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0; }
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .header ul {
+    top: 0; }
+    .header ul li {
+      float: left;
+      margin-left: 32px; }
+      .header ul li a {
+        padding: 0; }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none; }
+  .header .menu-icon {
+    display: none; } }
 
 footer {
   color: #42484D;
@@ -84,11 +164,15 @@ footer {
       footer .built {
         text-align: right; } }
 
-.homepage header {
+.homepage .header {
   border-bottom: none;
   background: #021E40; }
-  .homepage header a {
+  .homepage .header a {
     color: #ffffff; }
+  .homepage .header .navicon {
+    background: #ffffff; }
+    .homepage .header .navicon:before, .homepage .header .navicon:after {
+      background: #ffffff; }
 
 .homepage footer {
   border-top: 0; }
@@ -195,26 +279,32 @@ footer {
   max-width: 950px; }
 
 .more-work .projectsList {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0; }
+  .more-work .projectsList:after {
+    content: "";
+    display: table;
+    clear: both; }
   .more-work .projectsList li {
-    display: block;
-    width: 100%; }
-    @media (min-width: 75em) {
+    display: block; }
+    @media (min-width: 64em) {
       .more-work .projectsList li {
-        width: 50%; } }
+        width: 50%;
+        float: left; } }
 
 .more-work h2 {
   margin-bottom: 24px; }
 
 .more-work a {
   text-decoration: none;
-  padding: 20px 0;
+  padding: 12px 0;
   display: block;
   width: 100%; }
+  .more-work a:after {
+    content: "";
+    display: table;
+    clear: both; }
   .more-work a h3 {
     -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
@@ -229,22 +319,25 @@ footer {
 
 .post {
   margin-bottom: 80px; }
+  .post.about .title {
+    max-width: 600px;
+    margin: 60px 24px 40px 24px; }
+    @media (min-width: 75em) {
+      .post.about .title {
+        margin: 80px auto 40px auto; } }
   .post .title {
-    margin-top: 80px; }
+    margin-top: 60px; }
+    @media (min-width: 75em) {
+      .post .title {
+        margin-top: 80px; } }
     .post .title h1 {
-      margin: 8px 0; }
+      margin: 0 0 16px 0; }
+      @media (min-width: 75em) {
+        .post .title h1 {
+          margin: 0 0 8px 0; } }
     .post .title .byline {
       font-weight: 600;
       color: #7D868E; }
-  .post .title-image {
-    margin: 60px 0; }
-    .post .title-image img {
-      width: calc(100% + 60px);
-      margin-left: -30px; }
-      @media (min-width: 75em) {
-        .post .title-image img {
-          width: calc(100% + 100px);
-          margin-left: -50px; } }
   .post h2 {
     max-width: 600px;
     margin: 48px 24px 16px 24px; }
@@ -261,7 +354,7 @@ footer {
     font-family: "Lora", serif;
     font-size: 16px;
     line-height: 1.75;
-    color: #42484D;
+    color: #232729;
     margin: 0 24px 24px 24px;
     max-width: 600px; }
     @media (min-width: 64em) {
@@ -271,7 +364,7 @@ footer {
     font-family: "Lora", serif;
     font-size: 16px;
     line-height: 1.75;
-    color: #42484D;
+    color: #232729;
     margin: 0 24px 24px 24px;
     max-width: 600px;
     list-style: circle; }

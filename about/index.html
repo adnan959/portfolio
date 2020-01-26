@@ -15,19 +15,25 @@
 
     <link href="../stylesheets/site.css" rel="stylesheet" />
     <script src="../javascripts/site.js"></script>
-    <script src="../javascripts/retina.js"></script>
 
   </head>
   <body class="">
 
-    <header>
-      <div class="container animated fadeIn">
+    <header class="header">
+      <div class="container">
         <h1 class="logo">
 <a href="/">            Adnan Khan
 </a>        </h1>
-        <ul>
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu">
           <li>
 <a href="/#work">              Work
+</a>          </li>
+          <li>
+<a href="/about">              About
 </a>          </li>
           <li>
 <a href="mailto:adnan959@gmail.com">              Contact
@@ -36,34 +42,39 @@
       </div>
     </header>
 
-    <div class="post">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1">
+    <div class="post about">
+  <div class="title">
+    <h1>About</h1>
+    <div class="byline">A designer living in 🇬🇧, fully remote since 2014. Sometimes I travel.</div>
+  </div>
 
-        <div class="title">
-          <h1>About</h1>
-          <div class="byline">A designer living in 🇬🇧, fully remote since 2014. Sometimes I travel.</div>
-        </div>
+  <p>Hi 👋! I’m Adnan, a product designer based out of the United Kingdom. Currently I’m a Design Lead at Litmus focused on designing enterprise class software.</p>
 
-      </div><!-- /col -->
-    </div><!-- /row -->
+  <p>As a designer, I’m a strong advocate for the user and believe in finding solutions that solve actual user problems. I favor whiteboards to design tools and avoid solutioning until I’ve fully understood a problem space. Discovery is critical to my process, as a result I’ll often be found talking to customers, internal stakeholders and scrum owners.</p>
 
-    <div class="title-image">
-      <img src="/images/placeholder-index.png" alt="Placeholder index" />
-    </div>
+  <p>In the past I’ve worked for several startups and brands including Placester, InStyle, SapientNitro, Harvard Business School.</p>
 
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+  <p>I’m self taught and have been designing since I was 16 years old, what started off as a hobby quickly turned into a full-time career path. I’ve embraced working remotely since 2014, as a result you will often find me behind the camera of a Loom recording, talking to customers, sketching out ideas or running design sprints within scrum teams together - all remotely!</p>
 
-        <large>Building a faster email testing experience for users to be able to quickly iterate and test on thier emails prior to sending.</large>
+  <p>I’ve worked across several cross-functional Agile teams striving for continuous improvement and incrementally shipping product. I value effective communication and strong collaboration. I strongly believe that teams do their best work when they solve problems together. As a designer, I try to bring people together on a shared goal.</p>
 
-        <p>Litmus builds powerful tools for email designers, developers and marketers to help build, test, and analyze campaigns. One of Litmus’ primary offerings in 2015 was email previews, it helped email professionals render email previews across 90+ real email clients such as Apple Mail, iOS Mail or Outlook.</p>
+  <p>Outside of work, I enjoy talking about cars, technology and sometimes travel. My most recent adventure took me through Europe, where I visited six countries across two weeks.</p>
 
-      </div><!-- /col -->
-    </div><!-- /row -->
+  <ul class="linksList">
+    <li>
+      <a target="_blank" href="https://www.linkedin.com/in/adnan959/">Find me on LinkedIn</a>
+    </li>
+    <li>
+      <a target="_blank" href="mailto:adnan959@gmail.com">Get in touch over Email</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://dribbble.com/adnankhan">I post my latest work on Dribbble</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://twitter.com/adnan959">Or simply say a hello on Twitter!</a>
+    </li>
+  </ul>
 
-  </div><!-- container -->
 </div><!-- post -->
 
 
@@ -77,7 +88,7 @@
           </div>
           <div class="col-md-6 col-xs-12">
             <div class="built">
-              Built with ❤️, <strike>Sketch</strike> <a href="https://www.figma.com/">Figma</a> and <a href="https://middlemanapp.com/" target="_blank">Middleman</a>
+              Built with ❤️, <strike>Photoshop</strike> <strike>Sketch</strike> <a target="_blank" href="https://www.figma.com/">Figma</a> and <a href="https://middlemanapp.com/" target="_blank">Middleman</a>
             </div>
           </div>
         </div>
