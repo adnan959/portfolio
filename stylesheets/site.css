@@ -174,9 +174,6 @@ footer {
     .homepage .header .navicon:before, .homepage .header .navicon:after {
       background: #ffffff; }
 
-.homepage footer {
-  border-top: 0; }
-
 .hero {
   background: #021E40;
   color: #ffffff;
@@ -408,6 +405,11 @@ footer {
     text-align: center; }
     .post .image-full img, .post .image img {
       width: 100%; }
+      .post .image-full img.has-border, .post .image img.has-border {
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08);
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.04), 0px 1px 2px rgba(0, 0, 0, 0.08);
+        border: 1px solid #EBECF0;
+        border-radius: 4px; }
     @media (min-width: 75em) {
       .post .image-full img, .post .image img {
         max-width: 1240px; }
