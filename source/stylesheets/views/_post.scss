@@ -7,7 +7,7 @@
   margin: 0 24px 24px 24px ;
   max-width: 600px;
 
-  @media #{$breakpoint-tablet} {
+  @media #{$breakpoint-mobile} {
     margin: 0 auto 24px auto;
   }
 }
@@ -20,7 +20,7 @@
       max-width: 600px;
       margin: 60px 24px 40px 24px;
 
-      @media #{$breakpoint-desktop} {
+      @media #{$breakpoint-mobile} {
         margin: 80px auto 40px auto;
       }
     }
@@ -52,7 +52,7 @@
     max-width: 600px;
     margin: 48px 24px 16px 24px;
 
-    @media #{$breakpoint-desktop} {
+    @media #{$breakpoint-mobile} {
       margin: 48px auto 16px auto;
     }
   }
@@ -61,7 +61,7 @@
     max-width: 600px;
     margin: 32px 24px 16px 24px;
 
-    @media #{$breakpoint-desktop} {
+    @media #{$breakpoint-mobile} {
       margin: 32px auto 16px auto;
     }
   }
@@ -85,7 +85,7 @@
     padding: 0;
     margin: 0 24px 60px 24px;
 
-    @media #{$breakpoint-desktop} {
+    @media #{$breakpoint-mobile} {
       margin: 0 auto 60px auto;
     }
 
@@ -138,8 +138,10 @@
 
     @media #{$breakpoint-desktop} {
 
-      img {
+      img,
+      .video-container {
         max-width: 1240px;
+        margin: auto;
 
         &.w950 {
           max-width: 950px;

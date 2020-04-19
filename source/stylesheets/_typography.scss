@@ -14,6 +14,14 @@
   font-style: 600;
 }
 
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+       url('../fonts/proximanova-bold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: 800;
+}
+
 h1,
 h2,
 h3,
