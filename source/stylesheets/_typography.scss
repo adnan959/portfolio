@@ -33,17 +33,25 @@ h6  {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
 
-  @media #{$breakpoint-desktop} {
+  @media #{$breakpoint-tablet} {
     font-size: 42px;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
+
+  @media #{$breakpoint-tablet} {
+    font-size: 24px;
+  }
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
+
+  @media #{$breakpoint-tablet} {
+    font-size: 18px;
+  }
 }

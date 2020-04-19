@@ -13,7 +13,7 @@
   color: $titleColor;
   position: relative;
   width: 100%;
-  padding: 120px 0 200px 0;
+  height: 600px;
 
   &:before {
     content: "";
@@ -28,13 +28,26 @@
     margin: auto;
   }
 
+  .container {
+    top: 35%;
+    transform: translateY(-35%);
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    @media #{$breakpoint-tablet} {
+      top: 40%;
+      transform: translateY(-40%);
+    }
+  }
+
   h1 {
     display: block;
     margin: 0 0 32px 0;
     line-height: 44px;
     max-width: 90%;
 
-    @media #{$breakpoint-desktop} {
+    @media #{$breakpoint-tablet} {
       line-height: 54px;
     }
   }
@@ -69,8 +82,12 @@
 .case-studies {
 
   h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 52px;
+
+    @media #{$breakpoint-desktop} {
+      font-size: 32px;
+    }
   }
 
   article {
