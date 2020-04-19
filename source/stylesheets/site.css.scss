@@ -1,0 +1,16 @@
+//core
+@import "variables";
+@import "typography";
+@import "base";
+
+//partials
+@import "components/header";
+@import "components/footer";
+
+//views
+@import "views/homepage";
+@import "views/post";
+
+//plugins
+@import "plugins/flexboxgrid";
+@import "plugins/animate";

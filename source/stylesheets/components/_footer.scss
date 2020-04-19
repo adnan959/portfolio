@@ -1,0 +1,31 @@
+footer {
+  color: $textColor;
+  border-top: 1px solid #EBECF0;
+  padding: 40px 0 120px 0;
+  font-size: 14px;
+  font-weight: 600;
+
+  a {
+    color: $textColor;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .about {
+    display: none;
+
+    @media #{$breakpoint-tablet} {
+      display: inline;
+    }
+  }
+
+  .built {
+    text-align: center;
+
+    @media #{$breakpoint-tablet} {
+      text-align: right;
+    }
+  }
+}
