@@ -280,6 +280,9 @@ footer {
     @media (min-width: 64em) {
       .hero h1 {
         line-height: 54px; } }
+  .hero a {
+    color: #006FEE;
+  }
   .hero small {
     color: #42484D;
     font-size: 16px;
